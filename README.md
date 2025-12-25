@@ -1,31 +1,7 @@
-# research-env-sojr
-## `uv`の環境構築方法
-1. ローカルに`uv`をinstallする
+# create-base-env
+このリポジトリでは、Pythonで分析のリポジトリを作成する際に、もととなる`uv`などのパッケージを使えるような状態にしたものです。
 
-```powershell
-# Windows
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-2. `uv`で仮想環境を作成する
-```
-uv create (my_env)
-
-# activateする
-uv activate my_env
-```
-
-3. `uv`でpythonをinstallする
-```
-uv python install (バージョン)
-```
-
-4. スクリプトの実行
-```
-uv run main.py
-```
-
-5. 必要なライブラリのinstall
-```
-uv add (ライブラリ名==バージョン)
-```
+## できること
+- `uv` によるパッケージ管理
+- devcontainer環境
+- vscodeやJetBrains系IDEにも対応
